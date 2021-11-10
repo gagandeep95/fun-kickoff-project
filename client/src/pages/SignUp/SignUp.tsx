@@ -1,5 +1,4 @@
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import { FormikHelpers } from 'formik';
@@ -10,6 +9,7 @@ import SignUpForm from './SignUpForm/SignUpForm';
 import Navbar from '../../components/Navbar/Navbar';
 import { useAuth } from '../../context/useAuthContext';
 import { useSnackBar } from '../../context/useSnackbarContext';
+import { Link } from 'react-router-dom';
 
 export default function Register(): JSX.Element {
   const classes = useStyles();
@@ -42,9 +42,9 @@ export default function Register(): JSX.Element {
       <CssBaseline />
       <Grid xs={12}>
         <Navbar />
-        <Grid item xs={12} sm={8} md={7} elevation={6} component={Paper} square>
+        <Grid item xs={12}>
           <Box className={classes.authWrapper}>
-            <Box width="100%" maxWidth={450} p={3} alignSelf="center">
+            <Box width="100%" className={classes.formContainer} maxWidth={650} p={2} alignSelf="center">
               <Grid container>
                 <Grid item xs>
                   <Typography className={classes.welcome} component="h1" variant="h5">
@@ -53,6 +53,12 @@ export default function Register(): JSX.Element {
                 </Grid>
               </Grid>
               <SignUpForm handleSubmit={handleSubmit} />
+              <Typography className={classes.loginLink}>
+                Already a member?
+                <Link to="/login" style={{ color: '#f14140' }}>
+                  Login
+                </Link>
+              </Typography>
             </Box>
             <Box p={1} alignSelf="center" />
           </Box>

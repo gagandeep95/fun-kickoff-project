@@ -35,21 +35,23 @@ export default function Login(): JSX.Element {
   };
 
   return (
-    <Grid container component="main" className={classes.root}>
+    <Grid container component="main">
       <CssBaseline />
       <Grid item xs={12}>
         <Navbar />
-        <Box width="100%" maxWidth={450} p={3} alignSelf="center">
-          <Grid container>
-            <Grid item xs>
-              <Typography className={classes.welcome} component="h1" variant="h5">
-                Welcome back!
-              </Typography>
+        <Box className={classes.authWrapper}>
+          <Box className={classes.formContainer} width="100%" maxWidth={600} p={3} alignSelf="center">
+            <Grid container>
+              <Grid item xs>
+                <Typography className={classes.welcome} component="h1" variant="h5">
+                  Welcome back!
+                </Typography>
+              </Grid>
             </Grid>
-          </Grid>
-          <LoginForm handleSubmit={handleSubmit} />
+            <LoginForm handleSubmit={handleSubmit} />
+          </Box>
+          <Box p={1} alignSelf="center" />
         </Box>
-        <Box p={1} alignSelf="center" />
       </Grid>
     </Grid>
   );
