@@ -6,7 +6,6 @@ import Typography from '@material-ui/core/Typography';
 import useStyles from './useStyles';
 import register from '../../helpers/APICalls/register';
 import SignUpForm from './SignUpForm/SignUpForm';
-import Navbar from '../../components/Navbar/Navbar';
 import { useAuth } from '../../context/useAuthContext';
 import { useSnackBar } from '../../context/useSnackbarContext';
 import { Link } from 'react-router-dom';
@@ -41,7 +40,6 @@ export default function Register(): JSX.Element {
     <Grid container component="main">
       <CssBaseline />
       <Grid xs={12}>
-        <Navbar />
         <Grid item xs={12}>
           <Box className={classes.authWrapper}>
             <Box width="100%" className={classes.formContainer} maxWidth={650} p={2} alignSelf="center">

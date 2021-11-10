@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
   formContainer: {
     boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2)',
     margin: theme.spacing(10),
-    padding: theme.spacing(14, 70),
+    padding: theme.spacing(30, 70),
     [theme.breakpoints.down('sm')]: {
       width: '100%',
       boxShadow: 'none',
