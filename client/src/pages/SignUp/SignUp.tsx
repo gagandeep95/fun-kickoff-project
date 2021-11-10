@@ -38,7 +38,7 @@ export default function Register(): JSX.Element {
   };
 
   return (
-    <Grid container component="main" className={classes.root}>
+    <Grid container component="main">
       <CssBaseline />
       <Grid xs={12}>
         <Navbar />
