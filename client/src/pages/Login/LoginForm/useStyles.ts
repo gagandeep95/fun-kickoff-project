@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
   form: {
     width: '100%', // Fix IE 11 issue.
-    marginTop: theme.spacing(1),
+    paddingTop: theme.spacing(10),
   },
   label: {
     fontSize: 19,
@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: '5px',
   },
   inputs: {
-    marginTop: '.8rem',
+    marginTop: '.3rem',
     height: '2rem',
     padding: '5px',
   },
@@ -25,9 +25,8 @@ const useStyles = makeStyles((theme) => ({
     width: 160,
     height: 56,
     borderRadius: theme.shape.borderRadius,
-    marginTop: 49,
+    marginTop: 30,
     fontSize: 16,
-    backgroundColor: '#3a8dff',
     fontWeight: 'bold',
   },
 }));
