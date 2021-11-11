@@ -1,4 +1,3 @@
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import { FormikHelpers } from 'formik';
@@ -38,11 +37,23 @@ export default function Register(): JSX.Element {
 
   return (
     <Grid container component="main">
-      <CssBaseline />
       <Grid xs={12}>
         <Grid item xs={12}>
-          <Box className={classes.authWrapper}>
-            <Box width="100%" className={classes.formContainer} maxWidth={650} p={2} alignSelf="center">
+          <Box
+            display="flex"
+            alignItems="flex-start"
+            justifyContent="space-between"
+            flexDirection="column"
+            paddingTop="15px"
+          >
+            <Box
+              className={classes.formContainer}
+              boxShadow="0 4px 8px 0 rgba(0, 0, 0, 0.2)"
+              width="100%"
+              maxWidth={650}
+              p={3}
+              alignSelf="center"
+            >
               <Grid container>
                 <Grid item xs>
                   <Typography className={classes.welcome} component="h1" variant="h5">
@@ -51,9 +62,9 @@ export default function Register(): JSX.Element {
                 </Grid>
               </Grid>
               <SignUpForm handleSubmit={handleSubmit} />
-              <Typography className={classes.loginLink}>
+              <Typography className={classes.loginTypo}>
                 Already a member?
-                <Link to="/login" style={{ color: '#f14140' }}>
+                <Link to="/login" className={classes.loginLink}>
                   Login
                 </Link>
               </Typography>
