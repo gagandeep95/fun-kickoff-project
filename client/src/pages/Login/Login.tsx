@@ -7,6 +7,7 @@ import login from '../../helpers/APICalls/login';
 import LoginForm from './LoginForm/LoginForm';
 import { useAuth } from '../../context/useAuthContext';
 import { useSnackBar } from '../../context/useSnackbarContext';
+import Navbar from '../../components/Navbar/Navbar';
 export default function Login(): JSX.Element {
   const classes = useStyles();
   const { updateLoginContext } = useAuth();
@@ -34,6 +35,7 @@ export default function Login(): JSX.Element {
 
   return (
     <Grid container component="main">
+      <Navbar />
       <Grid item xs={12}>
         <Box
           display="flex"
