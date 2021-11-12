@@ -10,7 +10,7 @@ import { AuthProvider } from './context/useAuthContext';
 import { SocketProvider } from './context/useSocketContext';
 import { SnackBarProvider } from './context/useSnackbarContext';
 import CssBaseline from '@material-ui/core/CssBaseline';
-
+import Navbar from './components/Navbar/Navbar';
 import './App.css';
 
 function App(): JSX.Element {
@@ -21,6 +21,7 @@ function App(): JSX.Element {
           <AuthProvider>
             <SocketProvider>
               <CssBaseline />
+              <Navbar />
               <Switch>
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/signup" component={Signup} />

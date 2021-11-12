@@ -54,11 +54,8 @@ const useStyles = makeStyles((theme) => ({
       justifyContent: 'start',
     },
   },
-  bookingLink: {
-    color: '#000',
-  },
+
   authNavLinks: {
-    textDecoration: 'none',
     margin: theme.spacing(0, 0, 0, 5),
     [theme.breakpoints.down('sm')]: {
       margin: theme.spacing(3, 0, 0, 5),

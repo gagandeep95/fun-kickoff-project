@@ -5,7 +5,6 @@ import { useAuth } from '../../context/useAuthContext';
 import { useSocket } from '../../context/useSocketContext';
 import { useHistory } from 'react-router-dom';
 import { useEffect } from 'react';
-import Navbar from '../../components/Navbar/Navbar';
 
 export default function Dashboard(): JSX.Element {
   const { loggedInUser } = useAuth();
@@ -26,7 +25,6 @@ export default function Dashboard(): JSX.Element {
 
   return (
     <Grid container component="main">
-      <Navbar />
       <Typography variant="h3"> Welcome to Dashboard Page</Typography>
     </Grid>
   );

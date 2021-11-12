@@ -8,7 +8,6 @@ import SignUpForm from './SignUpForm/SignUpForm';
 import { useAuth } from '../../context/useAuthContext';
 import { useSnackBar } from '../../context/useSnackbarContext';
 import { Link } from 'react-router-dom';
-import Navbar from '../../components/Navbar/Navbar';
 
 export default function Register(): JSX.Element {
   const classes = useStyles();
@@ -39,7 +38,6 @@ export default function Register(): JSX.Element {
   return (
     <Grid container component="main">
       <Grid xs={12}>
-        <Navbar />
         <Grid item xs={12}>
           <Box
             display="flex"
