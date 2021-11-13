@@ -12,9 +12,7 @@ import { SnackBarProvider } from './context/useSnackbarContext';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Navbar from './components/Navbar/Navbar';
 import './App.css';
-import Profile from './pages/Profile/ProfilePhoto/Profile';
-
-import EditProfile from './pages/Profile/EditProfile/EditProfile';
+import Profile from './pages/Profile/Profile';
 
 function App(): JSX.Element {
   return (
@@ -34,11 +32,25 @@ function App(): JSX.Element {
                 <Route exact path="/profile">
                   <Profile />
                 </Route>
-                <Route exact path="/edit-profile" component={EditProfile} />
-
-                <Route exact path="/profile">
+                <Route exact path="/edit-profile">
                   <Profile />
                 </Route>
+                <Route exact path="/availability">
+                  <Profile />
+                </Route>
+
+                <Route exact path="/payment">
+                  <Profile />
+                </Route>
+
+                <Route exact path="/security">
+                  <Profile />
+                </Route>
+
+                <Route exact path="/settings">
+                  <Profile />
+                </Route>
+
                 <Route exact path="/bookings">
                   <Bookings />
                 </Route>

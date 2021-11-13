@@ -15,7 +15,7 @@ const Navbar = (): JSX.Element => {
 
   return (
     <Grid container className={classes.root}>
-      <Grid xs={5} md={3} className={classes.navbarBanner}>
+      <Grid xs={5} md={3} item className={classes.navbarBanner}>
         <img
           src="https://res.cloudinary.com/dz8xmxmly/image/upload/v1636475121/fun_kickoff_project/logo_ddnmxs.png"
           alt="logo"
